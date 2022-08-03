@@ -9,8 +9,13 @@ const scopes = [
     'user-read-currently-playing',
     'user-read-recently-played',
     'user-read-playback-position',
-    'user-top-read'
+    'user-top-read',
+    'playlist-read-collaborative',
+    'playlist-modify-public',
+    'playlist-read-private',
+    'playlist-modify-private',
 ]
+
 
 export const URL = `${auth_url}?client_id=${client_id}&scope=${scopes.join('%20')}&redirect_uri=${redirect_uri}&response_type=token&show_dialog=true`
 

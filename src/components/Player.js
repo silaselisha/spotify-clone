@@ -1,8 +1,18 @@
 import React from 'react'
+import SideBar from './SideBar'
+import Body from './Body'
+import Footer from './Footer'
+import './Player.css'
 
 const Player = ({ spotify }) => {
   return (
-    <div className='player'>Player</div>
+    <div className='player'>
+        <div className='player__body'>
+            <SideBar />
+            <Body />
+        </div>
+        <Footer />
+    </div>
   )
 }
 
