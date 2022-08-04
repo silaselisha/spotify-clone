@@ -6,8 +6,8 @@ body::-webkit-scrollbar {
     position: fixed;
     bottom: 0;
     background-color: #242424;
-    width: 98%;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
 
     display: flex;
     justify-content: space-between;
@@ -67,4 +67,5 @@ body::-webkit-scrollbar {
 
 .footer__right * .MuiSlider-root {
     color: #1db954;
+    width: 90%;
 }

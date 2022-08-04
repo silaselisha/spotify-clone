@@ -25,7 +25,6 @@ const App = () => {
       })
 
       spotify.getMe().then(user => {
-        console.log(user)
         dispatch({
           type: 'SET_USER',
           user: user
@@ -36,6 +35,13 @@ const App = () => {
         dispatch({
           type: 'SET_PLAYLISTS',
           playlists: playlists
+        })
+      })
+
+      spotify.getPlaylist('37i9dQZEVXcVosOEa5aqr7').then(playlist => {
+        dispatch({
+          type: 'SET_WEEKLY_DISCOVERY',
+          discovery: playlist
         })
       })
     }

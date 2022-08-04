@@ -20,7 +20,7 @@ const SideBar = () => {
           <br />
           <strong className='sidebar__title'>Playlist</strong>
           <hr />
-          {playlists?.items?.map(item => (<SidebarOption title={item.name} />))}
+          {playlists?.items?.map(item => (<SidebarOption key={item.id} title={item.name} />))}
     </div>
   )
 }

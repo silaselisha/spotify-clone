@@ -39,7 +39,7 @@ const Footer = () => {
             <VolumeDownIcon />
           </Grid>
           <Grid item xs>
-            <Slider size='medium' />
+            <Slider size='small' />
           </Grid>
         </Grid>
       </div>
